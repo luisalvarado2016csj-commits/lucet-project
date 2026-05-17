@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-text">
+        <h1>Liderazgo Ético por el Cambio y la Transformación</h1>
+        <p>¡Bienvenidos a la campaña de LUCET! Nuestra voz, tu voto en la FIIS.</p>
+        <a href="#propuestas" class="btn-unirse">Ver Propuestas</a>
+    </div>
+    <div class="hero-image-single">
+        <img src="{{ url_for('static', filename='images/mascota-fiis.png') }}" alt="Mascota FIIS" class="mascota-hero">
+    </div>
+</section>
+
+<div class="container">
+    
+    <div class="banner-voto-central">
+        <div class="voto-content">
+            <img src="{{ url_for('static', filename='images/numero-voto.png') }}" alt="Vota 47" class="img-voto-grande">
+            <div>
+                <h2>¡Este es el momento del cambio!</h2>
+                <p>Apoya una representación técnica, transparente y con liderazgo ético en nuestro consejo estudiantil. Marcando el 47 aseguras que tu voz cuente.</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="historia" class="card">
+        <h2>La Historia de LUCET</h2>
+        <div class="grid-info">
+            <div>
+                <p><strong>Cómo nacimos:</strong> Nuestra lista surgió de la necesidad de representar fielmente a los estudiantes, motivados por un cambio real dentro de la facultad.</p>
+            </div>
+            <div>
+                <p><strong>Qué representamos:</strong> Integridad, compromiso y una transformación enfocada en el bienestar académico y humano.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="propuestas" class="card">
+        <h2>Nuestras Propuestas Clave</h2>
+        <p style="margin-bottom: 20px;">Como candidatos a Consejero Estitiantil, nos enfocaremos en soluciones reales para la FIIS:</p>
+        
+        <div class="grid-propuestas">
+            <div class="propuesta-item">
+                <h3>📚 Gestión Académica</h3>
+                <p>Optimización en los procesos de matrícula, trámites de la facultad y soporte continuo al estudiante.</p>
+            </div>
+            <div class="propuesta-item">
+                <h3>💻 Infraestructura y Laboratorios</h3>
+                <p>Coordinar el mantenimiento e implementación de software actualizado en los laboratorios de cómputo.</p>
+            </div>
+            <div class="propuesta-item">
+                <h3>🤝 Bienestar e Integración</h3>
+                <p>Impulsar la unidad estudiantil mediante encuestas activas, talleres y canales directos de comunicación.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="consejo" class="card">
+        <h2>¿Qué hace el Consejo Estudiantil?</h2>
+        <p>Es el órgano que lleva tu voz ante las autoridades. Sirve para gestionar mejoras en laboratorios, trámites y bienestar. <strong>Tu voto sí importa</strong> porque asegura que quienes deciden tengan tus mismos intereses.</p>
+    </section>
+
+    <section class="card">
+        <h2>Nuestros Pilares</h2>
+        <ul>
+            <li><strong>Unidad y Acción:</strong> Saludos tipo unión al final de cada sesión para fortalecer el lazo entre votantes y representantes.</li>
+            <li><strong>Escucha Activa:</strong> Cada integrante de LUCET está comprometido a hablar con personas nuevas y entregar stickers de regalo para que todos se sientan escuchados.</li>
+        </ul>
+    </section>
+
+    <section id="contacto" class="card redes-section">
+        <h2>¡Conéctate con nosotros!</h2>
+        <p>Síguenos para enterarte de los debates, eventos de campaña y dejar tus sugerencias:</p>
+        <div class="redes-container">
+            <a href="TU_LINK_DE_INSTAGRAM" target="_blank" class="red-link instagram">📸 Instagram (@lucet.unfv)</a>
+            <a href="TU_LINK_DE_TIKTOK" target="_blank" class="red-link tiktok">🎵 TikTok (@lucet.unfv)</a>
+            <a href="TU_LINK_DE_WHATSAPP" target="_blank" class="red-link whatsapp">💬 Comunidad de WhatsApp</a>
+        </div>
+    </section>
+
+</div>
+{% endblock %}
